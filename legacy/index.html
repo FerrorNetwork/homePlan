@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4f0"><title>ДомПроект — планировка и ремонт</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="ДомПроект, главная"><span class="brand-mark">д</span><span>дом<span class="brand-light">проект</span><small>ПЛАНИРОВКА · ДИЗАЙН · СМЕТА</small></span></a>
+      <div class="side-label">ВАШ ПРОЕКТ</div><div class="project-switch"><span class="project-icon">⌂</span><span><b id="side-project">Новая квартира</b><small id="side-city">Самара · 68 м²</small></span><span class="chevron">⌄</span></div>
+      <div class="side-label steps-title">ПУТЬ ПРОЕКТА · 6 ШАГОВ</div>
+      <nav id="nav" class="journey-nav">
+        <button class="journey-item" data-page="plan"><span class="journey-num">01</span><span class="journey-copy"><b>Планировка</b><small>Комнаты, стены, проёмы</small></span></button>
+        <button class="journey-item" data-page="engineering"><span class="journey-num">02</span><span class="journey-copy"><b>Инженерия</b><small>Точки и коммуникации</small></span></button>
+        <button class="journey-item" data-page="style"><span class="journey-num">03</span><span class="journey-copy"><b>Стиль</b><small>Пожелания и бюджет</small></span></button>
+        <button class="journey-item" data-page="design"><span class="journey-num">04</span><span class="journey-copy"><b>Варианты дизайна</b><small>ИИ и сравнение</small></span></button>
+        <button class="journey-item" data-page="shopping"><span class="journey-num">05</span><span class="journey-copy"><b>Покупки и плитка</b><small>Каталог и список</small></span></button>
+        <button class="journey-item" data-page="estimate"><span class="journey-num">06</span><span class="journey-copy"><b>Смета</b><small>Итог проекта</small></span></button>
+      </nav>
+      <div class="sidebar-bottom"><div class="help-card"><span class="help-icon">✦</span><b>Начните с плана</b><p>Добавьте комнаты — мы поможем собрать дизайн и смету.</p><button class="text-button" data-go="plan">Открыть редактор <span>→</span></button></div><div class="user-row"><div class="avatar">Д</div><span><b>Гостевой проект</b><small>Данные хранятся на устройстве</small></span><span class="dots">•••</span></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="breadcrumbs"><button class="home-crumb" data-action="overview">Мой проект</button><b>/</b><strong id="crumb-title">Новая квартира</strong><span class="saved-badge"><i></i><span id="save-status">Сохранено</span></span></div><div class="top-actions"><span id="top-step" class="top-step">Старт проекта</span><button class="avatar small-avatar">Д</button></div></header>
+      <div id="app" class="page-content"></div>
+      <footer class="disclaimer">Эскизный инструмент для предварительного планирования. Проверки и смета носят справочный характер и не заменяют рабочую документацию и консультацию профильных специалистов.</footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

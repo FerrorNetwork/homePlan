@@ -1,0 +1,39 @@
+{
+  "global": [
+    { "id":"lemana", "name":"Лемана ПРО", "kind":"Сеть", "catalogUrl":"https://lemanapro.ru/", "integration":"Партнёрский API каталога и региональных цен; нужен одобренный доступ и ID региона.", "docsUrl":"https://developers.lemanapro.ru/api_b2b/", "cityNote":"Показывать только при выборе региона, поддержанного магазином.", "status":"api_application" },
+    { "id":"stroylandiya", "name":"Стройландия", "kind":"Сеть", "catalogUrl":"https://stroylandiya.ru/", "integration":"В открытых источниках не обнаружен публичный фид для внешнего каталога. Подключение через поставщика/коммерческое предложение; каталог и наличие выбирать на сайте по городу.", "docsUrl":"https://stroylandiya.ru/postavshikam/", "cityNote":"География зависит от города присутствия сети.", "status":"feed_request" },
+    { "id":"avito", "name":"Авито", "kind":"Объявления", "catalogUrl":"https://www.avito.ru/", "integration":"В MVP — переход на поиск объявлений по выбранному городу. Объявления не считаются проверенными магазинными SKU и не включаются автоматически в ИИ-смету.", "docsUrl":"https://developers.avito.ru/api-catalog", "cityNote":"Проверять продавца, состояние, размеры, доставку и цену в самом объявлении.", "status":"search_link" }
+  ],
+  "cities": {
+    "Самара": [
+      { "id":"stroy-s-samara", "name":"Строй-С", "kind":"Местный интернет-магазин", "catalogUrl":"https://samara.stroy-s.org/catalog/stroitelnye-materialy/", "integration":"Каталог с доставкой по Самаре; автоматический фид не найден. Запросить YML/CSV у магазина или импортировать файл каталога.", "status":"manual_feed" },
+      { "id":"teply-dom-samara", "name":"Тёплый Дом", "kind":"Местный интернет-магазин", "catalogUrl":"https://bazatd.ru/catalog/", "integration":"Самарский каталог стройматериалов; автоматический публичный фид не найден. Подключение через файл или прямую договорённость.", "status":"manual_feed" },
+      { "id":"maxidom-samara", "name":"Максидом", "kind":"Местная сеть", "catalogUrl":"https://www.maxidom.ru/", "integration":"Есть гипермаркет в Самаре. Для программного импорта нужен партнёрский фид или API.", "status":"feed_request" },
+      { "id":"lemana-samara", "name":"Лемана ПРО · Самара", "kind":"Региональный каталог", "catalogUrl":"https://samara.lemanapro.ru/", "integration":"Локальная витрина Самары; API цен привязывается к согласованному regionId.", "docsUrl":"https://developers.lemanapro.ru/api_b2b/", "status":"api_application" }
+    ],
+    "Казань": [
+      { "id":"megastroy-kazan", "name":"Мегастрой", "kind":"Местная сеть", "catalogUrl":"https://megastroy.com/", "integration":"Каталог строительных и отделочных материалов, сантехники, освещения и напольных покрытий. Публичный внешний фид не найден.", "status":"manual_feed" },
+      { "id":"maxidom-kazan", "name":"Максидом", "kind":"Местная сеть", "catalogUrl":"https://www.maxidom.ru/", "integration":"Проверять доступность магазина и доставки для выбранного адреса.", "status":"feed_request" }
+    ],
+    "Санкт-Петербург": [
+      { "id":"petrovich-spb", "name":"Петрович", "kind":"Местная сеть", "catalogUrl":"https://petrovich.ru/catalog/", "integration":"Широкий региональный каталог стройматериалов; доступ к внешнему фиду нужно согласовать.", "status":"feed_request" },
+      { "id":"vimos-spb", "name":"ВИМОС", "kind":"Региональная сеть", "catalogUrl":"https://vimos.ru/", "integration":"Сеть строительных магазинов Северо-Запада. Внешний фид для проекта нужно запросить у сети.", "status":"feed_request" }
+    ],
+    "Москва": [
+      { "id":"petrovich-msk", "name":"Петрович", "kind":"Местная сеть", "catalogUrl":"https://petrovich.ru/catalog/", "integration":"Проверять региональные цены и доставку для адреса проекта.", "status":"feed_request" },
+      { "id":"maxidom-msk", "name":"Максидом", "kind":"Местная сеть", "catalogUrl":"https://www.maxidom.ru/", "integration":"Проверять наличие сети и доставку для адреса проекта.", "status":"feed_request" }
+    ],
+    "Екатеринбург": [
+      { "id":"petrovich-ekb", "name":"Петрович", "kind":"Региональный каталог", "catalogUrl":"https://ekaterinburg.petrovich.ru/catalog/", "integration":"Региональная версия каталога; внешний фид нужно согласовать.", "status":"feed_request" },
+      { "id":"urres-ekb", "name":"Уррес", "kind":"Местный интернет-магазин", "catalogUrl":"https://urres.ru/", "integration":"Екатеринбургский магазин стройматериалов; запросить файл каталога для импорта.", "status":"manual_feed" }
+    ],
+    "Новосибирск": [
+      { "id":"diola-nsk", "name":"Диола", "kind":"Местный магазин", "catalogUrl":"https://www.diola.ru/", "integration":"Каталог интернет-магазина; внешний фид необходимо запросить у продавца.", "status":"manual_feed" },
+      { "id":"nsk-rinok", "name":"Рынок на Доватора", "kind":"Местный магазин", "catalogUrl":"https://www.nsk-rinok.ru/", "integration":"Региональный каталог стройматериалов и доставки по Новосибирску; импортировать согласованный файл каталога.", "status":"manual_feed" }
+    ]
+  },
+  "fallback": [
+    { "id":"maxidom", "name":"Максидом", "kind":"Сеть", "catalogUrl":"https://www.maxidom.ru/", "integration":"Проверить город и условия доставки на сайте.", "status":"feed_request" }
+  ],
+  "researchedAt": "2026-11-01"
+}

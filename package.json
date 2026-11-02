@@ -1,0 +1,9 @@
+{
+  "name": "dom-proekt",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Планировка, инженерия, ИИ-дизайн, раскладка плитки и смета ремонта для рынка РФ",
+  "type": "module",
+  "scripts": { "start": "node server.mjs" },
+  "engines": { "node": ">=20" }
+}

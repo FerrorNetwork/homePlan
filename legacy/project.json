@@ -1,0 +1,388 @@
+{
+  "name": "Новая квартира",
+  "city": "Самара",
+  "region": "Самарская область",
+  "floor": 1,
+  "rooms": [
+    {
+      "id": "r1",
+      "name": "Кухня-гостиная",
+      "type": "Гостиная",
+      "area": 28.5,
+      "x": 72,
+      "y": 77,
+      "w": 348,
+      "h": 270,
+      "color": "#e8ede4",
+      "widthM": 6.060803027102377,
+      "depthM": 4.70234717620012,
+      "ceilingM": 2.7,
+      "floor": 1
+    },
+    {
+      "id": "r2",
+      "name": "Спальня",
+      "type": "Спальня",
+      "area": 17.2,
+      "x": 420,
+      "y": 77,
+      "w": 250,
+      "h": 270,
+      "color": "#f0e9df",
+      "widthM": 3.9907299991262155,
+      "depthM": 4.309988399056313,
+      "ceilingM": 2.7,
+      "floor": 1
+    },
+    {
+      "id": "r3",
+      "name": "Ванная",
+      "type": "Ванная",
+      "area": 5.8,
+      "x": 72,
+      "y": 347,
+      "w": 220,
+      "h": 104,
+      "color": "#e4eff0",
+      "widthM": 3.502746175393068,
+      "depthM": 1.6558436465494506,
+      "ceilingM": 2.7,
+      "floor": 1
+    },
+    {
+      "id": "r4",
+      "name": "Прихожая",
+      "type": "Прихожая",
+      "area": 8.1,
+      "x": 292,
+      "y": 347,
+      "w": 378,
+      "h": 104,
+      "color": "#f0eee6",
+      "widthM": 5.425899429162377,
+      "depthM": 1.4928400545843576,
+      "ceilingM": 2.7,
+      "floor": 1
+    },
+    {
+      "id": "r1793511238567",
+      "name": "Комната 5",
+      "type": "Комната",
+      "area": 12,
+      "x": 129,
+      "y": 101,
+      "w": 210,
+      "h": 150,
+      "color": "#e4ece6",
+      "widthM": 4.098780306383839,
+      "depthM": 2.9277002188455996,
+      "ceilingM": 2.7,
+      "floor": 1
+    }
+  ],
+  "items": [
+    {
+      "id": "f1",
+      "room": "r1",
+      "kind": "sofa",
+      "name": "Диван",
+      "x": 140,
+      "y": 220,
+      "floor": 1
+    },
+    {
+      "id": "f2",
+      "room": "r1",
+      "kind": "table",
+      "name": "Стол",
+      "x": 270,
+      "y": 282,
+      "floor": 1
+    },
+    {
+      "id": "f3",
+      "room": "r2",
+      "kind": "bed",
+      "name": "Кровать",
+      "x": 562.6349206349206,
+      "y": 275.4310344827586,
+      "floor": 1
+    }
+  ],
+  "points": [
+    {
+      "id": "p1",
+      "room": "r1",
+      "kind": "socket",
+      "name": "Розетка",
+      "x": 160,
+      "y": 95,
+      "floor": 1
+    },
+    {
+      "id": "p2",
+      "room": "r1",
+      "kind": "light",
+      "name": "Светильник",
+      "x": 270,
+      "y": 195,
+      "floor": 1
+    },
+    {
+      "id": "p3",
+      "room": "r2",
+      "kind": "socket",
+      "name": "Розетка",
+      "x": 630,
+      "y": 120,
+      "floor": 1
+    },
+    {
+      "id": "p4",
+      "room": "r3",
+      "kind": "water",
+      "name": "Вода",
+      "x": 272.5079365079365,
+      "y": 365.08620689655174,
+      "floor": 1
+    }
+  ],
+  "products": [
+    {
+      "id": "sofa-nord-01",
+      "name": "Диван прямой «Сканди»",
+      "brand": "ДомМаркет",
+      "category": "Мебель",
+      "price": 58990,
+      "dimensions": "2100 × 920 × 820 мм",
+      "tags": [
+        "скандинавский",
+        "современный",
+        "ткань",
+        "диван"
+      ],
+      "emoji": "🛋️",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=диван%20прямой%20скандинавский",
+      "updated": "Демо"
+    },
+    {
+      "id": "table-wood-02",
+      "name": "Стол обеденный из дуба",
+      "brand": "ДомМаркет",
+      "category": "Мебель",
+      "price": 27990,
+      "dimensions": "1400 × 800 × 750 мм",
+      "tags": [
+        "скандинавский",
+        "эко",
+        "дерево",
+        "стол"
+      ],
+      "emoji": "🪑",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=обеденный%20стол%20дуб",
+      "updated": "Демо"
+    },
+    {
+      "id": "chair-oak-03",
+      "name": "Стул деревянный «Форма»",
+      "brand": "ДомМаркет",
+      "category": "Мебель",
+      "price": 8990,
+      "dimensions": "470 × 520 × 810 мм",
+      "tags": [
+        "скандинавский",
+        "эко",
+        "дерево",
+        "стул"
+      ],
+      "emoji": "🪑",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=деревянный%20стул",
+      "updated": "Демо"
+    },
+    {
+      "id": "lamp-arc-04",
+      "name": "Подвесной светильник «Дуга»",
+      "brand": "Свет и Дом",
+      "category": "Освещение",
+      "price": 7490,
+      "dimensions": "380 × 380 × 240 мм",
+      "tags": [
+        "современный",
+        "лофт",
+        "металл",
+        "светильник"
+      ],
+      "emoji": "💡",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=подвесной%20светильник%20металл",
+      "updated": "Демо"
+    },
+    {
+      "id": "tile-stone-05",
+      "name": "Керамогранит «Тёплый камень»",
+      "brand": "Керамика РФ",
+      "category": "Плитка",
+      "price": 1890,
+      "dimensions": "600 × 600 × 9 мм",
+      "tags": [
+        "современный",
+        "минимализм",
+        "камень",
+        "плитка"
+      ],
+      "emoji": "▧",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=керамогранит%20600x600",
+      "updated": "Демо"
+    },
+    {
+      "id": "bed-linen-06",
+      "name": "Кровать с мягким изголовьем",
+      "brand": "ДомМаркет",
+      "category": "Мебель",
+      "price": 42990,
+      "dimensions": "1660 × 2150 × 1040 мм",
+      "tags": [
+        "скандинавский",
+        "неоклассика",
+        "кровать"
+      ],
+      "emoji": "🛏️",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=кровать%20с%20мягким%20изголовьем",
+      "updated": "Демо"
+    },
+    {
+      "id": "paint-sand-07",
+      "name": "Краска интерьерная «Тихий песок»",
+      "brand": "Краски РФ",
+      "category": "Отделка",
+      "price": 3490,
+      "dimensions": "Ведро 9 л",
+      "tags": [
+        "скандинавский",
+        "японди",
+        "минимализм",
+        "краска"
+      ],
+      "emoji": "🎨",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=краска%20интерьерная%20бежевая",
+      "updated": "Демо"
+    },
+    {
+      "id": "rug-soft-08",
+      "name": "Ковёр фактурный «Лён»",
+      "brand": "Текстиль Дом",
+      "category": "Декор",
+      "price": 11990,
+      "dimensions": "1600 × 2300 мм",
+      "tags": [
+        "скандинавский",
+        "эко",
+        "текстиль"
+      ],
+      "emoji": "▤",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=ковер%20натуральная%20фактура",
+      "updated": "Демо"
+    },
+    {
+      "id": "vanity-09",
+      "name": "Тумба под раковину «Терра»",
+      "brand": "Ванная РФ",
+      "category": "Сантехника",
+      "price": 24990,
+      "dimensions": "800 × 460 × 520 мм",
+      "tags": [
+        "современный",
+        "минимализм",
+        "ванная"
+      ],
+      "emoji": "🚿",
+      "store": "Демо-каталог",
+      "url": "https://market.yandex.ru/search?text=тумба%20под%20раковину%2080",
+      "updated": "Демо"
+    }
+  ],
+  "style": "Скандинавский",
+  "prompt": "Светлая кухня-гостиная, натуральное дерево, спокойная палитра.",
+  "designs": [
+    {
+      "id": "d1793512403742",
+      "provider": "демо",
+      "name": "Скандинавский · спокойный дом",
+      "description": "Подборка для вашей планировки в стиле «Скандинавский». Учтён запрос: Светлая кухня-гостиная, натуральное дерево, спокойная палитра.. Подобрано 5 позиций из каталога проекта.",
+      "productIds": [
+        "sofa-nord-01",
+        "table-wood-02",
+        "chair-oak-03",
+        "bed-linen-06",
+        "paint-sand-07"
+      ]
+    },
+    {
+      "id": "d1793512403743",
+      "provider": "демо",
+      "name": "Скандинавский · тёплый вариант",
+      "description": "Альтернативная палитра и сочетания материалов на основе товаров, которые уже есть в каталоге.",
+      "productIds": [
+        "table-wood-02",
+        "chair-oak-03",
+        "lamp-arc-04",
+        "tile-stone-05"
+      ]
+    }
+  ],
+  "tile": {
+    "width": 2.4,
+    "height": 1.7,
+    "tileWidth": 0.6,
+    "tileHeight": 0.6,
+    "joint": 2,
+    "waste": 10,
+    "pattern": "Прямая"
+  },
+  "workLevel": "Стандарт",
+  "reserve": 10,
+  "addedLines": [],
+  "layers": {
+    "furniture": true,
+    "electricity": true,
+    "water": true
+  },
+  "budget": 500000,
+  "journey": {
+    "completed": [
+      "plan",
+      "engineering",
+      "style",
+      "design"
+    ],
+    "currentStep": 4,
+    "finished": false,
+    "skippedEngineering": true
+  },
+  "selectedDesignId": "d1793512403742",
+  "manualShopping": [],
+  "preferences": {
+    "occupants": 1,
+    "children": false,
+    "pets": false,
+    "mustHave": "",
+    "avoid": "",
+    "designRooms": []
+  },
+  "walls": [],
+  "openings": [],
+  "routes": [],
+  "floors": [
+    1
+  ],
+  "referenceImages": [],
+  "referenceConsent": false,
+  "provider": "local"
+}
