@@ -447,7 +447,8 @@ await feeds.init();
 feeds.startScheduler();
 
 const port = Number(process.env.PORT) || 4173;
-const host = process.env.HOST || '127.0.0.1';
+// Локально слушаем только этот компьютер; на хостинге (Render задаёт RENDER=true) — все адреса
+const host = process.env.HOST || (process.env.RENDER ? '0.0.0.0' : '127.0.0.1');
 server.on('error', e => {
   if (e.code === 'EADDRINUSE') {
     console.error(`Порт ${port} уже занят — вероятно, ДомПроект или другой сервер уже запущен.\nОстановите его или запустите на другом порту: PORT=4180 node server.mjs (в PowerShell: $env:PORT=4180; node server.mjs)`);
