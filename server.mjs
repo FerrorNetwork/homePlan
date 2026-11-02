@@ -14,7 +14,8 @@ import { createFeedSync } from './lib/feed-sync.mjs';
 
 const scrypt = promisify(scryptCb);
 const root = path.dirname(fileURLToPath(import.meta.url));
-const dataDir = path.join(root, 'data');
+// На хостинге данные можно вынести на постоянный диск: DATA_DIR=/var/data
+const dataDir = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(root, 'data');
 const dirs = { users: path.join(dataDir, 'users'), uploads: path.join(dataDir, 'uploads'), shares: path.join(dataDir, 'shares') };
 for (const d of Object.values(dirs)) await mkdir(d, { recursive: true });
 
